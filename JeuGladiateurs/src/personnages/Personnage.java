@@ -8,17 +8,33 @@ public class Personnage {
     // <editor-fold defaultstate="collapsed" desc="Attributs">
     // TODO : Mettre vos attributs ici
     // </editor-fold>
-
+    
+    String nom;
+    int pointsDeVie;
+    int valeurMaxAttaque;
+    int valeurDefense;
+    int initiative;
     // **************************************************************************
     // **************************************************************************
     // **************************************************************************
     // <editor-fold defaultstate="collapsed" desc="Constructeurs et initialisation">
-    public Personnage(String nom, int attaqueMax, int defense, int pvs, int ini) {
+    public Personnage(String nom, int attaqueMax, int defense, int pvs, int ini) 
+    {
         // TODO : Constructeur AVEC paramètres
+        this.nom = nom;
+        this.valeurMaxAttaque = attaqueMax;
+        this.valeurDefense = defense;
+        this.pointsDeVie = pvs;
+        this.initiative = ini;
     }
 
     public Personnage() {
         // TODO : Constructeur SANS paramètres qui initialise à ZÉRO ou à ""
+        this.nom = "";
+        this.valeurMaxAttaque = 0;
+        this.valeurDefense = 0;
+        this.pointsDeVie = 0;
+        this.initiative = 0;
     }
     // </editor-fold>
 
@@ -29,6 +45,47 @@ public class Personnage {
     // TODO : Les getters
     // TODO : Les setters
     // </editor-fold>
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public int getPointsDeVie() {
+        return pointsDeVie;
+    }
+
+    public void setPointsDeVie(int pointsDeVie) {
+        this.pointsDeVie = pointsDeVie;
+    }
+
+    public int getValeurMaxAttaque() {
+        return valeurMaxAttaque;
+    }
+
+    public void setValeurMaxAttaque(int valeurMaxAttaque) {
+        this.valeurMaxAttaque = valeurMaxAttaque;
+    }
+
+    public int getValeurDefense() {
+        return valeurDefense;
+    }
+
+    public void setValeurDefense(int valeurDefense) {
+        this.valeurDefense = valeurDefense;
+    }
+
+    public int getInitiative() {
+        return initiative;
+    }
+
+    public void setInitiative(int initiative) {
+        this.initiative = initiative;
+    }
+    
 
     // **************************************************************************
     // **************************************************************************
