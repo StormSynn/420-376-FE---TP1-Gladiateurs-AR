@@ -119,14 +119,35 @@ public class Personnage {
         return randomNbr;
     }
 
-    public void frapperPersonnage(Personnage personnageCible) {
+    public void frapperPersonnage(Personnage personnageCible) 
+    {
         // TODO : Récupérer la valeur d'attaque pour ce tour, calculer les dégats,
         //modifier les points de vie du personnage cible, afficher les détails
         // sur l'attaque, tel que montré dans l'énoncé.
+//        personnageCible.getValeurDefense();
+        
+        int valeurAttaque = attaqueCalcul();
+        int dommages = valeurAttaque - personnageCible.valeurDefense;
+        if (dommages <= 0) 
+        {
+            dommages = 0;
+        }
+        personnageCible.pointsDeVie -= dommages;
+        
+        if (personnageCible.pointsDeVie <= 0) 
+        {
+            personnageCible.pointsDeVie = 0;
+        }
+        System.out.println(nom + " attaque avec une puissance de : " + valeurAttaque);
+        System.out.println(personnageCible.nom + " a une defense de : " + personnageCible.valeurDefense);
+        System.out.println("les dommages sont donc de : " + dommages);
     }
 
-    public void setNewInitiativeRandom() {
+    public void setNewInitiativeRandom() 
+    {
         // TODO : Modifier de façon aléatoire la valeur INI du personnage.
+        initiative = (int)(Math.random() * 101);
+        
     }
     // </editor-fold>
 }
