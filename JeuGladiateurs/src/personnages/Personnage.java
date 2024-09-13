@@ -110,10 +110,13 @@ public class Personnage {
         }
     }
 
-    private int attaqueCalcul() {
+    private int attaqueCalcul() 
+    {
         // TODO : Retourner la valeur de l'attaque du personnage.
         // Cette valeur est trouvée aléatoirement et doit se situer entre ZÉRO et valeurMaxAttaque.
-        return 0;
+        int randomNbr = (int)(Math.random()* valeurMaxAttaque);
+        
+        return randomNbr;
     }
 
     public void frapperPersonnage(Personnage personnageCible) {
