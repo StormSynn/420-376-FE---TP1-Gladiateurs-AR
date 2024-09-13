@@ -52,10 +52,9 @@ public class JeuGladiateurs {
             System.out.println("Statut: Vivant \n");
         }
     // TODO : Afficher le message du début du combat
+    affichage.afficherDebutCombat();
+    
     // </editor-fold>
-        System.out.println("<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>");
-        System.out.println("<<<<< Que le combat commence ! >>>>>");
-        System.out.println("<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>");
     // **************************************************************************
     // **************************************************************************
     // **************************************************************************
