@@ -53,7 +53,9 @@ public class JeuGladiateurs {
         }
     // TODO : Afficher le message du début du combat
     affichage.afficherDebutCombat();
-
+    
+    
+   
     // </editor-fold>
     // **************************************************************************
     // **************************************************************************
