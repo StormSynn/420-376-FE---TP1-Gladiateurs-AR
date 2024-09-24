@@ -30,13 +30,13 @@ public class Retiaire extends Personnage
             chanceToucherAdversaire = (int)(Math.random() *10);
             if (chanceToucherAdversaire == 6) 
             {
-               System.out.println(this.nom +"Son filet attrape " + personnageCible + "l'empale sauvagement avec sa lance");
+               System.out.println(this.nom +" Son filet attrape " + personnageCible + "l'empale sauvagement avec sa lance");
                personnageCible.pointsDeVie = 0;
             }
             else
             {
                 filet = false;
-                System.out.println("Igor l'empaleur n'a pas son filet");
+                System.out.println(" Igor l'empaleur n'a pas son filet");
                 super.frapperPersonnage(personnageCible);
             }
         }
